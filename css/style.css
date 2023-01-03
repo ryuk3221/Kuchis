@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 600px 0 auto;
+}
+.goodsValues{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+body{
+  font-family: "Roboto";
+  font-size: 25px;
+  font-weight: 500;
+  
+}
+.title{
+  text-align: center;
+  padding: 40px 0;
+  color: #5e34c9;
+  background-color: #c5afff;
+  font-size: 30px;
+}
+.hot{
+  background-color: #efc8c8;
+}
+.sub-title{
+  color: #212042;
+  text-align: center;
+  font-size: 27px;
+  padding: 20px;
+}
+.goods{
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 2px;
+  cursor: pointer;
+  border: 2px solid #212042;
+  background-color: #c5afff;
+  width: 241px;
+  height: 34px;
+  margin-bottom: 10px;
+  
+}
+.goods-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 15px;
+  padding-bottom: 50px;
+}
+.check{
+  position: fixed;
+  width: 500px;
+  height: 89vh;
+  right: 0;
+  top: 109px;
+  background-color: rgb(191, 241, 230);
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px;
+  text-align: center;
+}
+.st1{
+  margin-top: -30px;
+}
+button{
+  font-size: 17px;
+  cursor: pointer;
+}
+.nal{
+  width: 150px;
+  position: absolute;
+  height: 46px;
+  margin-bottom: 10px;
+  bottom: 15px;
+  z-index: 2;
+}
+.debit{
+  width: 150px;
+  position: absolute;
+  bottom: 26px;
+  right: 175px;
+}
+.totalChek{
+  font-size: 20px;
+  position: absolute;
+  bottom: 100px;
+}
+.modal-btn{
+  width: 150px;
+  height: 46px;
+  position: absolute;
+  bottom: 26px;
+  right: 10px;
+}
+.hide-modal{
+  width: 150px;
+  height: 46px;
+  position: absolute;
+  bottom: 26px;
+  right: 10px;
+}
+
+.modal{
+  position: fixed;
+  width: 500px;
+  height: 89vh;
+  right: 0;
+  top: 109px;
+  background-color: rgb(191, 241, 230);
+  display: none;
+}
+.otchet {
+  position: absolute;
+  bottom: 26px;
+  width: 150px;
+  height: 46px;
+}

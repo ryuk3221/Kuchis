@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>KUCHIS</title>
+</head>
+<body>
+  <h1 class="title">KUCHIS COFFEE</h1>
+  <section class="hot">
+    <div class="container">
+      <div class="hot-drinks">
+        <h2 class="sub-title">Горячие напитки</h2>
+        <div class="goods-box">
+          <label class="goods" id="190"  onclick="showChek(this)">Капучино 300мл</label>
+          <label class="goods" id="240"  onclick="showChek(this)">Капучино 400мл</label>
+          <label class="goods" id="190"  onclick="showChek(this)">Латте 300мл</label>
+          <label class="goods" id="240"  onclick="showChek(this)">Латте 400мл</label>
+          <label class="goods" id="130"  onclick="showChek(this)">Американо 200мл</label>
+          <label class="goods" id="160"  onclick="showChek(this)">Американо 300мл</label>
+          <label class="goods" id="150"  onclick="showChek(this)">Какао 200мл</label>
+          <label class="goods" id="200"  onclick="showChek(this)">Какао 300мл</label>
+          <label class="goods" id="250"  onclick="showChek(this)">Какао 400мл</label>
+          <label class="goods" id="250"  onclick="showChek(this)">Какао 400мл</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="check">
+    <h2 class="sub-title st1">Чек</h2>
+    <button class="nal" onclick="addSumNal()">Наличные</button>
+    <button class="debit" onclick="addSumDebit()">Банковская карта</button>
+    <button class="modal-btn" onclick="showModal()">Отчёт по смене</button>
+    <p class="totalChek">Сумма чека: <span class="sumChek" id="sumChek"></span></p>
+  </div>
+  <div class="modal" id="modal">
+    <p class="total-nal">Наличные : <span class="total-nal-number"></span></p>
+    <p class="total-debit">Банковская карта : <span class="total-debit-number"></span></p>
+    <button class="otchet" onclick="fillingGoods()">Отчет по продажам</button>
+    <button class="hide-modal" onclick="hideModal()">Закрыть</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
